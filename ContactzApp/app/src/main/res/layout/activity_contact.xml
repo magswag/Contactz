@@ -1,0 +1,194 @@
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:background="@color/grayColor"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="10dp"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <ImageView
+                android:fitsSystemWindows="true"
+                android:src="@drawable/ic_person_24dp"
+                android:transitionName="@string/activity_image_trans"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                android:layout_width="fill_parent"
+                android:layout_height="320dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imagennn"
+                app:layout_collapseMode="parallax"
+                android:minHeight="60dp"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/scrollView"
+        android:clipToPadding="false"
+
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+<android.support.v7.widget.CardView  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_marginLeft="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginRight="8dp"
+    android:layout_gravity="center"
+ android:layout_marginTop="8dp"
+    android:transitionName="@string/activity_text_trans"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="2dp"
+    android:onClick="callP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    android:clickable="true">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_call_24dp"/>
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="123"
+            android:id="@+id/phonenumber"
+            android:fontFamily="sans-serif"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/phonenum"
+            android:layout_marginTop="4dp"
+            android:id="@+id/phonenumbertext"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_message_24dp"
+            android:id="@+id/message"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_marginLeft="110dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_email"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            android:onClick="emailAdresss"
+            android:clickable="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_email_24dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="example@gmail.com"
+                        android:id="@+id/mailadress"
+                        android:fontFamily="sans-serif"
+                        android:textSize="24sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/mailtext"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/mailtext"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

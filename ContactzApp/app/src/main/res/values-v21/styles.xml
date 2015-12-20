@@ -1,0 +1,12 @@
+<resources>
+    <style name="AppTheme.NoActionBarLOl">
+        <item name="android:windowExitAnimation">@transition/in_activity</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="AppTheme.transparent" parent="AppTheme.NoActionBarLOl">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+</resources>

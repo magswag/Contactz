@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Contactz</string>
+    <string name="action_settings">Settings</string>
+    <string name="phonenum">Phone-number</string>
+    <string name="contn">New contact</string>
+    <string name="createc">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="activity_mixed_trans">activity_mixed_transition</string>
+    <string name="mailtext">E-mail</string>
+    <string name="activity_text_trans">activity_text_transition</string>
+    <string name="activity_image_trans">activity_image_transition</string>
+
+</resources>

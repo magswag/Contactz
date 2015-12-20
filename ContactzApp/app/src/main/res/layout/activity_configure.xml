@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.micropop.contactz.Configure">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:transitionName="@string/activity_text_trans"
+        android:hint="@string/phonenum"
+        android:ems="10"
+        android:id="@+id/editText2" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:transitionName="@string/activity_text_trans"
+        android:hint="@string/mailtext"
+        android:ems="10"
+        android:id="@+id/editText3" />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick image"
+        android:id="@+id/button"
+        android:clickable="true"
+        android:onClick="imageP" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:transitionName="@string/activity_image_trans"
+        android:id="@+id/thaImage" />
+
+</LinearLayout>
